@@ -90,7 +90,7 @@ class Post(models.Model):
     @staticmethod
     def get_by_tag(tag_id):
         try:
-            tag=Tag.objects.get(id=task_id)
+            tag=Tag.objects.get(id=tag_id)
         except Tag.DoesNotExist:
             tag=None
             post_list=[]
